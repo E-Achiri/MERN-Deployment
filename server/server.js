@@ -8,5 +8,5 @@ const express = require('express'),
 
 app.use(cors(),express.json(),express.urlencoded({extended:true}));
 
-require('./server/config/database.config');
-require('./server/routes/project.routes')(app);
+require('./config/database.config');
+require('./routes/project.routes')(app);
