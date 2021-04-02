@@ -1,0 +1,99 @@
+GET http://localhost:8000/ HTTP/1.1
+
+###
+
+GET http://localhost:8000/api/projects HTTP/1.1
+# content-type: application/json
+
+# {
+#     "name": "sample",
+#     "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+# }
+
+###
+
+POST http://localhost:8000/api/projects HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Learn A Backflip",
+    "duedate": "2021-06-01"
+}
+
+###
+
+
+POST http://localhost:8000/api/projects HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Finish Building Fantasy League",
+    "duedate": "2021-07-15",
+    "status" : "inprogress"
+}
+
+###
+
+POST http://localhost:8000/api/projects HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Get an Internship",
+    "duedate": "2021-05-17",
+    "status": "completed"
+}
+
+###
+
+POST http://localhost:8000/api/projects HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Finish Classwork",
+    "duedate": "2021-03-12",
+    "status": "inprogress"
+}
+
+###
+
+
+POST http://localhost:8000/api/projects HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Design Mail Rover",
+    "duedate": "2020-11-30",
+    "status": "backlog"
+}
+
+###
+
+
+
+POST http://localhost:8000/api/projects HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Design Mail Rover2",
+    "duedate": "2020-12-30",
+    "status": "backlog"
+}
+
+###
+
+GET http://localhost:8000/api/projects/606683776425720a1460a6d7 HTTP/1.1
+
+###
+
+PUT  http://localhost:8000/api/projects/606683776425720a1460a6d7 HTTP/1.1
+content-type: application/json
+
+{
+    "status": "backlog"
+}
+
+###
+DELETE   http://localhost:8000/api/projects/606683936425720a1460a6d8 HTTP/1.1
+
+
+
